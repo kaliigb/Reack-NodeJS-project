@@ -1,0 +1,43 @@
+/* Button.module.css */
+
+/* Base styles for the .container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px; /* Adjusted font size for better readability */
+  font-weight: bold;
+  padding: 10px 20px; /* Adjusted padding for a more comfortable tap target */
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Optional: Add a box shadow when the button is clicked */
+button:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for small screens (max-width 768px, adjust the value as needed) */
+@media (max-width: 768px) {
+  button {
+    font-size: 14px; /* Adjusted font size for small screens */
+    padding: 8px 16px; /* Adjusted padding for small screens */
+  }
+}
